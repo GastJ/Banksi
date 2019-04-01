@@ -27,7 +27,7 @@ header {
 
 footer {
     width: 50%;
-    height: 18%;
+    height: auto;
     background: #fff;
     position: fixed;
     bottom: 0;
@@ -162,7 +162,7 @@ h5 {
     font-family: 'Brandon_light';
     color: white;
     letter-spacing: 6px;
-    font-size: .9em;
+    font-size: .8em;
     text-decoration: none;
     margin: 0;
     text-transform: uppercase;
@@ -214,8 +214,10 @@ h5 {
 }
 
 .taller:hover img{
-    transform: scale(1.1);
-    transition: all .3s; 
+    /* transform: scale(1.1);
+    transition: all .3s;  */
+    transform: scale(1.02);
+    transition: all .5s;
 }
 
 @font-face {
@@ -287,7 +289,7 @@ projet1:hover {
 }
 
 .header .picto {
-    height: 60%;
+    /* height: 60%; */
     width: auto;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -323,7 +325,10 @@ projet1:hover {
     background-color: #fff;
     width: 60px;
     height: 1px;
-    margin: 30px auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
 }
 
 /* MENU */
@@ -436,7 +441,8 @@ a {
 }
 
 .fullimage img {
-    width: 100%;
+    width: 88%;
+    margin-left: 6%;
     height: auto;
     z-index: 1;
     overflow: hidden;
@@ -463,7 +469,7 @@ iframe {
     margin-bottom: -10px;
 }
 .number{
-    padding: 5%;
+    /* padding: 5%; */
 }
 .number .dashnumber, .number h4 {
     left: 0;
@@ -487,7 +493,9 @@ iframe {
 .number h4 {
     letter-spacing: 3px;
     color: #000;
-    top: 130px;
+    /* top: 130px; */
+    top: 24%;
+    transform: translateY(-50%);
     font-size: 13px;
     white-space: nowrap;
 }
@@ -529,6 +537,10 @@ p {
     /* padding: 5%; */
 }
 
+.vertical {
+    height: 300px;
+}
+
 .box-social {
     padding: 8% 0;
 }
@@ -567,7 +579,7 @@ li {
 
 .link img {
     display: inline;
-    width: 60px;
+    width: 50px;
 }
 
 @media screen and (max-width: 1024px){
@@ -589,6 +601,14 @@ li {
 }
 
 @media screen and (max-width: 768px){
+    #logo img{
+        height: auto;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
     header{
         height: auto;
         width: 100%;
@@ -607,7 +627,7 @@ li {
     }
 
     .header h2{
-        font-size: 1.1em;    
+        font-size: 1.4em;    
     }
 
     h3{
@@ -677,5 +697,18 @@ li {
         background: #fff;
         position: inherit;
         padding: 5% 0;
+    }
+}
+@media screen and (max-width: 500px){
+    #logo img{
+        height: auto;
+        width: 60%;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+    h4{
+        font-size: .6em;
     }
 }
